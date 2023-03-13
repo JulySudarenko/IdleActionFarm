@@ -2,7 +2,7 @@
 
 namespace Code.Config
 {
-    [CreateAssetMenu(fileName = "PlayerConfig", menuName = "Data/PlayerConfig", order = 0)]
+    [CreateAssetMenu(fileName = "PlayerConfig", menuName = "Configs/PlayerConfig", order = 0)]
     public sealed class CharacterConfig : ScriptableObject
     {
         public Transform FemalePrefab;
@@ -13,7 +13,6 @@ namespace Code.Config
         [SerializeField] private float _speed = 10.0f;
         [SerializeField] private float _height = 1.7f;
         [SerializeField] private float _jumpHeight = 5.0f;
-
 
         public float Speed => _speed;
 

@@ -19,10 +19,12 @@
           </e>
           <e p="Config" t="Include">
             <e p="CharacterConfig.cs" t="Include" />
+            <e p="UIConfig.cs" t="Include" />
             <e p="UnionConfig.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
             <e p="Controllers.cs" t="Include" />
+            <e p="JoystickController.cs" t="Include" />
             <e p="LaunchingController.cs" t="Include" />
           </e>
           <e p="Hit" t="Include">
@@ -44,13 +46,11 @@
             <e p="TimeRemainingExtensions.cs" t="Include" />
           </e>
           <e p="UserInput" t="Include">
-            <e p="AxisInput.cs" t="Include" />
             <e p="ButtonInput.cs" t="Include" />
             <e p="InputConfig.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="InputInitialization.cs" t="Include" />
             <e p="IUserInputButtonProxy.cs" t="Include" />
-            <e p="IUserInputProxy.cs" t="Include" />
           </e>
         </e>
         <e p="Materials" t="Include">

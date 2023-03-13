@@ -1,6 +1,4 @@
-﻿using Code.Controllers;
-using Code.Factory;
-using Code.Interfaces;
+﻿using Code.Interfaces;
 using UnityEngine;
 
 namespace Code.Character
@@ -17,11 +15,12 @@ namespace Code.Character
         {
             _character = character;
             _moveController = moveController;
+            // столкновение с пшеницей
         }
 
         public void Execute(float deltaTime)
         {
-            AnimatorStateInfo stateInfo = _character.Animator.GetCurrentAnimatorStateInfo(0);
+            //AnimatorStateInfo stateInfo = _character.Animator.GetCurrentAnimatorStateInfo(0);
 
             if (_moveController.IsWalk)
             {
@@ -31,6 +30,15 @@ namespace Code.Character
             {
                 _character.Animator.SetTrigger(Stay);
             }
+
+            // if ()
+            // {
+            //     _character.Animator.SetBool("Work", true);
+            // }
+            // else
+            // {
+            //     _character.Animator.SetBool("Work", false);
+            // }
         }
     }
 }

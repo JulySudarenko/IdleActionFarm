@@ -3,7 +3,7 @@ using Code.Config;
 using Code.Hit;
 using UnityEngine;
 
-namespace Code.Factory
+namespace Code.Character
 {
     public class CharacterModel
     {
@@ -11,14 +11,13 @@ namespace Code.Factory
         public Transform Transform { get; }
         public Rigidbody Rigidbody { get; }
         public HitHandler HitHandler { get; }
-        public TriggerHandler FeetCollider { get; }
         public Animator Animator { get; }
         public Renderer Renderer { get; }
         public AudioSource AudioSource { get; }
         public int CharacterID { get; }
         public int ColliderID { get; }
 
-        public CharacterModel(CharacterConfig config, Transform feetPrefab)
+        public CharacterModel(CharacterConfig config)
         {
             var character = Object.Instantiate(config.FemalePrefab).gameObject;
             Character = character;
@@ -32,8 +31,6 @@ namespace Code.Factory
             CharacterID = character.GetInstanceID();
             AudioSource = character.GetOrAddComponent<AudioSource>();
             AudioSource.volume = 0.2f;
-            var feet = Object.Instantiate(feetPrefab, Transform);
-            FeetCollider = feet.gameObject.GetOrAddComponent<TriggerHandler>();
         }
     }
 }

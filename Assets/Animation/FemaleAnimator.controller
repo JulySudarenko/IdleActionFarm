@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Work
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4450221755832560738}
@@ -101,7 +101,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 103a90a3600679b4697f20cc5792b742, type: 3}
+  m_Motion: {fileID: 7400000, guid: 04533f86f5e4c8343a60983f3c00f2a5, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -116,12 +116,6 @@ AnimatorController:
   m_Name: FemaleAnimator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Work
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: Walk
     m_Type: 9
     m_DefaultFloat: 0
@@ -134,7 +128,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Work 0
+  - m_Name: Work
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -250,7 +244,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0847a0b7fc33c8a4fb959b7da2c742ef, type: 3}
+  m_Motion: {fileID: 7400000, guid: b68ab814df3b1bd41aaa5e80c0585a96, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

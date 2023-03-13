@@ -1,9 +1,11 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Code.UserInput
 {
     public interface IUserInputButtonProxy
     {
+        event Action<Vector3> OnChangeMousePosition;
         event Action<bool> OnButtonDown;
         event Action<bool> OnButtonHold;
         event Action<bool> OnButtonUp;

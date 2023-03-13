@@ -1,11 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fed54cb6-606c-4add-894c-bbcc97b80336" name="Default Changelist" comment="" />
+    <list default="true" id="fed54cb6-606c-4add-894c-bbcc97b80336" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LittleFarm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LittleFarm/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LittleFarm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LittleFarm/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LittleFarm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LittleFarm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/female/f_melee_combat_attack_A.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/female/f_melee_combat_attack_A.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Character/CharacterAnimatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Character/CharacterAnimatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Character/CharacterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Character/CharacterModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Character/CharacterMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Character/CharacterMoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Config/CharacterConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Config/CharacterConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Config/UnionConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Config/UnionConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controllers/LaunchingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controllers/LaunchingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/AxisInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/AxisInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/ButtonInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserInput/ButtonInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/IUserInputButtonProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserInput/IUserInputButtonProxy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/IUserInputProxy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/IUserInputProxy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/InputConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserInput/InputConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/InputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserInput/InputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UserInput/InputInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UserInput/InputInitialization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grass Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Grass Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Barn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Barn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Houses.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Houses/house_big.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Houses/house_big.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Houses/house_small.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Houses/house_small.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Instruments.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Instruments/Box_1_1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Instruments/Box_1_1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Instruments/ScytheV1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Instruments/ScytheV1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TT_demo_female.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TT_demo_female.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Box.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Box.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/fir.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/fir.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/grass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/grass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/shrub.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/shrub.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Garden.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Garden/land_garden.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Garden/land_garden.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GrassPlane.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GrassPlane.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/Barn.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/Barn.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/house_big.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/house_big.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/house_small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/house_small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scythe.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scythe.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TT_demo_female.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TT_demo_female.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/Config/UnionConfig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -15,16 +100,25 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Dynamic Grass FX/Shaders/Grass.shader" />
         <option value="$PROJECT_DIR$/Assets/Code/Config/PlayerConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Character/CharacterModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Character/CharacterAnimatorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Character/CharacterMoveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controllers/Controllers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controllers/LaunchingController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Character/CharacterModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserInput/InputConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserInput/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserInput/InputInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Character/CharacterAnimatorController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserInput/ButtonInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/UserInput/IUserInputButtonProxy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Config/CharacterConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Config/UnionConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controllers/JoystickController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controllers/LaunchingController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Config/UIConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Character/CharacterMoveController.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="2MmDbmmhDGwVOU53XUB1d17z4AS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -32,6 +126,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -47,10 +143,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22800">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="22800" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -63,7 +159,121 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom" timestamp="1678705618134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618134" />
+    <state width="1877" height="365" key="GridCell.Tab.0.center" timestamp="1678705618134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618134" />
+    <state width="1877" height="365" key="GridCell.Tab.0.left" timestamp="1678705618133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618133" />
+    <state width="1877" height="365" key="GridCell.Tab.0.right" timestamp="1678705618134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618134" />
+    <state width="1877" height="365" key="GridCell.Tab.1.bottom" timestamp="1678705618134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618134" />
+    <state width="1877" height="365" key="GridCell.Tab.1.center" timestamp="1678705618134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618134" />
+    <state width="1877" height="365" key="GridCell.Tab.1.left" timestamp="1678705618134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618134" />
+    <state width="1877" height="365" key="GridCell.Tab.1.right" timestamp="1678705618134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618134" />
+    <state width="1877" height="365" key="GridCell.Tab.2.bottom" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state width="1877" height="365" key="GridCell.Tab.2.center" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state width="1877" height="365" key="GridCell.Tab.2.left" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state width="1877" height="365" key="GridCell.Tab.2.right" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state width="1877" height="365" key="GridCell.Tab.3.bottom" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state width="1877" height="365" key="GridCell.Tab.3.center" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state width="1877" height="365" key="GridCell.Tab.3.left" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state width="1877" height="365" key="GridCell.Tab.3.right" timestamp="1678705618135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678705618135" />
+    <state x="832" y="219" key="RiderGenerateDialog" timestamp="1678689623682">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="832" y="219" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1678689623682" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Controllers/LaunchingController.cs</url>
+          <line>22</line>
+          <properties documentPath="D:\Unity\LittleFarm\Assets\Code\Controllers\LaunchingController.cs" initialLine="22">
+            <startOffsets>
+              <option value="643" />
+            </startOffsets>
+            <endOffsets>
+              <option value="721" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Controllers/LaunchingController.cs</url>
+          <line>24</line>
+          <properties documentPath="D:\Unity\LittleFarm\Assets\Code\Controllers\LaunchingController.cs" initialLine="24">
+            <startOffsets>
+              <option value="747" />
+            </startOffsets>
+            <endOffsets>
+              <option value="888" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

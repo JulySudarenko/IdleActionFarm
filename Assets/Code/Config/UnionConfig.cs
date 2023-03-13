@@ -4,15 +4,16 @@ using UnityEngine;
 
 namespace Code.Config
 {
-    [CreateAssetMenu(fileName = "UnionResourcesConfig", menuName = "UnionResourcesConfig", order = 0)]
+    [CreateAssetMenu(fileName = "UnionConfig", menuName = "UnionConfig", order = 0)]
     public sealed class UnionConfig : ScriptableObject
     {
-        [SerializeField] private string _inputSettingsPath = "InputConfig";
-        [SerializeField] private string _characterSettingsPath = "CharacterConfig";
+        [SerializeField] private string _inputSettingsPath = "Configs/InputConfig";
+        [SerializeField] private string _characterSettingsPath = "Configs/CharacterConfig";
+        [SerializeField] private string _uiSettingsPath = "Configs/UIConfig";
 
         private InputConfig _inputConfig;
-
         private CharacterConfig _characterConfig;
+        private UIConfig _uiConfig;
 
         public InputConfig InputConfig
         {
@@ -40,39 +41,16 @@ namespace Code.Config
             }
         }
 
-        // [SerializeField] private string _resourcesFolder = "ResConfigs";
-        // [SerializeField] private string _questFolder = "QuestConfigs";
-        // [SerializeField] private string _placeFolder = "PlacesConfigs";
-        //
-        // private ResourcesConfig[] _resourcesConfigs;
-        // private QuestNpcConfig[] _questNpcConfigs;
-        // private BuildingPlacesConfig[] _buildingPlacesConfigs;
-        //
-        // public ResourcesConfig[] AllResourcesConfigs
-        // {
-        //     get
-        //     {
-        //         _resourcesConfigs = Assistant.LoadAll<ResourcesConfig>(_resourcesFolder);
-        //         return _resourcesConfigs;
-        //     }
-        // }
-        //
-        // public QuestNpcConfig[] AllQuestNpcConfigs
-        // {
-        //     get
-        //     {
-        //         _questNpcConfigs = Assistant.LoadAll<QuestNpcConfig>(_questFolder);
-        //         return _questNpcConfigs;
-        //     }
-        // }
-        //
-        // public BuildingPlacesConfig[] AllBuildingPlacesConfigs
-        // {
-        //     get
-        //     {
-        //         _buildingPlacesConfigs = Assistant.LoadAll<BuildingPlacesConfig>(_placeFolder);
-        //         return _buildingPlacesConfigs;
-        //     }
-        // }
+        public UIConfig UIConfig
+        {
+            get
+            {
+                if (_uiConfig == null)
+                {
+                    _uiConfig = Assistant.Load<UIConfig>(_uiSettingsPath);
+                }
+                return _uiConfig;
+            }
+        }
     }
 }

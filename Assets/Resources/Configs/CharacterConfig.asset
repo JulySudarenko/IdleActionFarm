@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d3c8412bea9534faadd3653a2444a0, type: 3}
+  m_Name: CharacterConfig
+  m_EditorClassIdentifier: 
+  FemalePrefab: {fileID: 48235925266764813, guid: 0d1fa830926389c4f8b56dcf60867e04, type: 3}
+  SpawnPoint: {fileID: 3552686094424354825, guid: 660b30cc66d18f747823cec5687ace2d, type: 3}
+  FeetCollider: {fileID: 0}
+  Scythe: {fileID: 5499057094133807294, guid: 6d5c973482b67d04e8b5574a2dc815a5, type: 3}
+  _speed: 100
+  _height: 1.7
+  _jumpHeight: 5
