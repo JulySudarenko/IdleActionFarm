@@ -14,23 +14,36 @@
           </e>
           <e p="Character" t="Include">
             <e p="CharacterAnimatorController.cs" t="Include" />
+            <e p="CharacterCollisionHandler.cs" t="Include" />
             <e p="CharacterModel.cs" t="Include" />
             <e p="CharacterMoveController.cs" t="Include" />
+            <e p="CharacterState.cs" t="Include" />
+            <e p="ICharacterState.cs" t="Include" />
           </e>
           <e p="Config" t="Include">
             <e p="CharacterConfig.cs" t="Include" />
+            <e p="FarmConfig.cs" t="Include" />
             <e p="UIConfig.cs" t="Include" />
             <e p="UnionConfig.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
+            <e p="CharacterStateController.cs" t="Include" />
+            <e p="CharacterTriggerHandler.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
             <e p="JoystickController.cs" t="Include" />
             <e p="LaunchingController.cs" t="Include" />
           </e>
+          <e p="Farm" t="Include">
+            <e p="FarmModel.cs" t="Include" />
+          </e>
           <e p="Hit" t="Include">
-            <e p="HitHandler.cs" t="Include" />
+            <e p="CollisionDetector.cs" t="Include" />
             <e p="IHit.cs" t="Include" />
-            <e p="TriggerHandler.cs" t="Include" />
+            <e p="TriggerDetector.cs" t="Include" />
+          </e>
+          <e p="Instruments" t="Include">
+            <e p="ScytheController.cs" t="Include" />
+            <e p="ScytheView.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="IController.cs" t="Include" />
@@ -50,7 +63,7 @@
             <e p="InputConfig.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="InputInitialization.cs" t="Include" />
-            <e p="IUserInputButtonProxy.cs" t="Include" />
+            <e p="IUserInputButton.cs" t="Include" />
           </e>
         </e>
         <e p="Materials" t="Include">

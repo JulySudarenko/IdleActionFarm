@@ -10,7 +10,8 @@ namespace Code.Character
         public GameObject Character { get; }
         public Transform Transform { get; }
         public Rigidbody Rigidbody { get; }
-        public HitHandler HitHandler { get; }
+        public CollisionDetector CollisionDetector { get; }
+        public TriggerDetector TriggerDetector { get; }
         public Animator Animator { get; }
         public Renderer Renderer { get; }
         public AudioSource AudioSource { get; }
@@ -24,13 +25,14 @@ namespace Code.Character
             Transform = character.transform;
             Rigidbody = character.GetOrAddComponent<Rigidbody>();
             Animator = character.GetOrAddComponent<Animator>();
-            Renderer = character.GetComponent<Renderer>();
-            HitHandler = character.GetOrAddComponent<HitHandler>();
-            var collider = character.GetOrAddComponent<Collider>();
-            ColliderID = collider.GetInstanceID();
-            CharacterID = character.GetInstanceID();
+            //Renderer = character.GetComponent<Renderer>();
+            CollisionDetector = character.GetOrAddComponent<CollisionDetector>();
+            //var collider = character.GetOrAddComponent<Collider>();
+            //ColliderID = collider.GetInstanceID();
+            //CharacterID = character.GetInstanceID();
             AudioSource = character.GetOrAddComponent<AudioSource>();
             AudioSource.volume = 0.2f;
+            TriggerDetector = character.GetOrAddComponent<TriggerDetector>();
         }
     }
 }

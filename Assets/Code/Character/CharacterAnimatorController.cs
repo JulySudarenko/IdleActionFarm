@@ -1,44 +1,82 @@
-﻿using Code.Interfaces;
+﻿using System;
+using Code.Interfaces;
 using UnityEngine;
 
 namespace Code.Character
 {
-    internal class CharacterAnimatorController : IExecute
+    internal class CharacterAnimatorController : ICharacterState// IExecute, 
     {
-        private readonly CharacterModel _character;
+        public event Action<CharacterState> ChangeCharacterState;
+        private readonly Animator _animator;
         private readonly CharacterMoveController _moveController;
         private static readonly int Walk = Animator.StringToHash("Walk");
         private static readonly int Stay = Animator.StringToHash("Stay");
+        private static readonly int Work = Animator.StringToHash("Work");
+        private CharacterState _state;
 
-
-        public CharacterAnimatorController(CharacterModel character, CharacterMoveController moveController)
+        public CharacterAnimatorController(Animator animator)
         {
-            _character = character;
-            _moveController = moveController;
-            // столкновение с пшеницей
+            _animator = animator;
         }
+        //
+        // public void Execute(float deltaTime)
+        // {
+        //     // switch (_state)
+        //     // {
+        //     //     case CharacterState.Stay:
+        //     //         _animator.SetTrigger(Stay);
+        //     //         _animator.SetBool(Work, false);
+        //     //         break;
+        //     //     case CharacterState.Walk:
+        //     //         _animator.SetTrigger(Walk);
+        //     //         _animator.SetBool(Work, false);
+        //     //         break;
+        //     //     case CharacterState.Work:
+        //     //         _animator.SetBool(Work, true);
+        //     //         break;
+        //     //     default:
+        //     //         throw new ArgumentOutOfRangeException();
+        //     // }
+        //     // if (_moveController.IsWalk)
+        //     // {
+        //     //     _character.Animator.SetTrigger(Walk);
+        //     // }
+        //     // else
+        //     // {
+        //     //     _character.Animator.SetTrigger(Stay);
+        //     // }
+        //
+        //     // if ()
+        //     // {
+        //     //     _character.Animator.SetBool("Work", true);
+        //     // }
+        //     // else
+        //     // {
+        //     //     _character.Animator.SetBool("Work", false);
+        //     // }
+        // }
 
-        public void Execute(float deltaTime)
+
+        public void ChangeState(CharacterState newState)
         {
-            //AnimatorStateInfo stateInfo = _character.Animator.GetCurrentAnimatorStateInfo(0);
-
-            if (_moveController.IsWalk)
+            _state = newState;
+            
+            switch (_state)
             {
-                _character.Animator.SetTrigger(Walk);
+                case CharacterState.Stay:
+                    _animator.SetTrigger(Stay);
+                    _animator.SetBool(Work, false);
+                    break;
+                case CharacterState.Walk:
+                    _animator.SetTrigger(Walk);
+                    _animator.SetBool(Work, false);
+                    break;
+                case CharacterState.Work:
+                    _animator.SetBool(Work, true);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
-            else
-            {
-                _character.Animator.SetTrigger(Stay);
-            }
-
-            // if ()
-            // {
-            //     _character.Animator.SetBool("Work", true);
-            // }
-            // else
-            // {
-            //     _character.Animator.SetBool("Work", false);
-            // }
         }
     }
 }

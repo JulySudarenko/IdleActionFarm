@@ -1,5 +1,7 @@
 ﻿using Code.Character;
 using Code.Config;
+using Code.Farm;
+using Code.Instruments;
 using Code.Timer;
 using Code.UserInput;
 using UnityEngine;
@@ -14,21 +16,17 @@ namespace Code.Controllers
 
         private void Awake()
         {
-            var camera = Camera.main;
             _controllers = new Controllers();
             var input = new InputInitialization(_unionConfig.InputConfig);
             var inputController = new InputController(input);
 
+            var farm = new FarmModel(_unionConfig.FarmConfig);
             var character = new CharacterModel(_unionConfig.CharacterConfig);
-            var joystick = new JoystickController(_unionConfig.UIConfig, input.InputWalk);
+            var characterController = new CharacterStateController(character, _unionConfig, input.InputWalk, farm);
+            var scytheController = new ScytheController(character.Transform, characterController);
             
-            var moveController =
-                new CharacterMoveController(character, joystick, input.InputWalk, _unionConfig.CharacterConfig, camera);
-            var animatorController = new CharacterAnimatorController(character, moveController);
-
             _controllers.Add(inputController);
-            _controllers.Add(moveController);
-            _controllers.Add(animatorController);
+            _controllers.Add(characterController);
 
             _controllers.Add(new TimeRemainingController());
         }

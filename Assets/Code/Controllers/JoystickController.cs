@@ -1,4 +1,5 @@
 ﻿using System;
+using Code.Character;
 using Code.Config;
 using Code.UserInput;
 using UnityEngine;
@@ -6,10 +7,11 @@ using Object = UnityEngine.Object;
 
 namespace Code.Controllers
 {
-    public class JoystickController : IDisposable
+    public class JoystickController : ICharacterState, IDisposable
     {
+        public event Action<CharacterState> ChangeCharacterState;
         public event Action<Vector3> OnJoystickDirectionChange;
-        private readonly IUserInputButtonProxy _walkInput;
+        private readonly IUserInputButton _walkInput;
         private readonly UIConfig _config;
         private Transform _joystick;
         private Transform _touchCircle;
@@ -17,7 +19,7 @@ namespace Code.Controllers
         private Vector3 _targetVector;
         private bool _isTouch;
 
-        public JoystickController(UIConfig config, IUserInputButtonProxy walkInput)
+        public JoystickController(UIConfig config, IUserInputButton walkInput)
         {
             _walkInput = walkInput;
             _config = config;
@@ -47,6 +49,8 @@ namespace Code.Controllers
                 _touchCircle.gameObject.SetActive(true);
                 _joystick.position = _mousePosition;
                 _touchCircle.position = _mousePosition;
+
+                ChangeCharacterState?.Invoke(CharacterState.Walk);
             }
         }
 
@@ -75,7 +79,13 @@ namespace Code.Controllers
             {
                 _joystick.gameObject.SetActive(false);
                 _touchCircle.gameObject.SetActive(false);
+                
+                ChangeCharacterState?.Invoke(CharacterState.Stay);
             }
+        }
+
+        public void ChangeState(CharacterState newState)
+        {
         }
 
         public void Dispose()

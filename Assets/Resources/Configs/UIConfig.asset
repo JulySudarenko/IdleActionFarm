@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78103a01d5df4246a4ae32ec0d2fabd2, type: 3}
   m_Name: UIConfig
   m_EditorClassIdentifier: 
-  Joystick: {fileID: 0}
-  TouchCircle: {fileID: 0}
+  Joystick: {fileID: 6844825793428733615, guid: 9a92e9bfd53781f47b1a1ea32a170bf5, type: 3}
+  TouchCircle: {fileID: 8094755710215907242, guid: ffe32e94508597247a065e01e07a0935, type: 3}
+  _touchCircleMaxPosition: 100
   _coins: {fileID: 0}
   _bag: {fileID: 0}

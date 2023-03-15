@@ -2,7 +2,7 @@
 
 namespace Code.Config
 {
-    [CreateAssetMenu(fileName = "PlayerConfig", menuName = "Configs/PlayerConfig", order = 0)]
+    [CreateAssetMenu(fileName = "CharacterConfig", menuName = "Configs/CharacterConfig", order = 0)]
     public sealed class CharacterConfig : ScriptableObject
     {
         public Transform FemalePrefab;

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Code.Hit
 {
-    public class HitHandler : MonoBehaviour, IHit
+    public class CollisionDetector : MonoBehaviour, IHit
     {
         public event Action<int, int> OnHitEnter;
         public event Action<int, int> OnHitExit;

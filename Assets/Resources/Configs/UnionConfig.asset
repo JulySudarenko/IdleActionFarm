@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputSettingsPath: Configs/InputConfig
   _characterSettingsPath: Configs/CharacterConfig
+  _uiSettingsPath: Configs/UIConfig

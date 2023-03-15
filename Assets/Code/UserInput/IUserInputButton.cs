@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Code.UserInput
 {
-    public interface IUserInputButtonProxy
+    public interface IUserInputButton
     {
         event Action<Vector3> OnChangeMousePosition;
         event Action<bool> OnButtonDown;

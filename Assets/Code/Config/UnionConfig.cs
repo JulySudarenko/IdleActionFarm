@@ -10,10 +10,12 @@ namespace Code.Config
         [SerializeField] private string _inputSettingsPath = "Configs/InputConfig";
         [SerializeField] private string _characterSettingsPath = "Configs/CharacterConfig";
         [SerializeField] private string _uiSettingsPath = "Configs/UIConfig";
+        [SerializeField] private string _farmSettingsPath = "Configs/FarmConfig";
 
         private InputConfig _inputConfig;
         private CharacterConfig _characterConfig;
         private UIConfig _uiConfig;
+        private FarmConfig _farmConfig;
 
         public InputConfig InputConfig
         {
@@ -50,6 +52,18 @@ namespace Code.Config
                     _uiConfig = Assistant.Load<UIConfig>(_uiSettingsPath);
                 }
                 return _uiConfig;
+            }
+        }        
+        
+        public FarmConfig FarmConfig
+        {
+            get
+            {
+                if (_farmConfig == null)
+                {
+                    _farmConfig = Assistant.Load<FarmConfig>(_farmSettingsPath);
+                }
+                return _farmConfig;
             }
         }
     }

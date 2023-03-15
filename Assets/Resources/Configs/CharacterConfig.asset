@@ -16,6 +16,6 @@ MonoBehaviour:
   SpawnPoint: {fileID: 3552686094424354825, guid: 660b30cc66d18f747823cec5687ace2d, type: 3}
   FeetCollider: {fileID: 0}
   Scythe: {fileID: 5499057094133807294, guid: 6d5c973482b67d04e8b5574a2dc815a5, type: 3}
-  _speed: 100
+  _speed: 50
   _height: 1.7
   _jumpHeight: 5
