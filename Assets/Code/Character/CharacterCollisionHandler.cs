@@ -1,9 +1,10 @@
 ﻿using System;
 using Code.Hit;
+using Code.Interfaces;
 
 namespace Code.Character
 {
-    internal class CharacterCollisionHandler : IDisposable
+    internal class CharacterCollisionHandler : IInitialization, IDisposable
     {
         public event Action BarnDetected;
         private readonly IHit _colliderDetector;
@@ -13,7 +14,10 @@ namespace Code.Character
         {
             _colliderDetector = character;
             _barnID = barnID;
-
+        }
+        
+        public void Initialize()
+        {
             _colliderDetector.OnHitEnter += OnCollision;
         }
 

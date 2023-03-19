@@ -8,7 +8,7 @@ using Code.UserInput;
 
 namespace Code.Controllers
 {
-    internal class CharacterStateController : IInitialization, ICharacterState, IDisposable // IExecute,
+    internal class CharacterStateController : IInitialization, ICharacterState, IDisposable
     {
         public event Action<CharacterState> ChangeCharacterState;
         private readonly List<ICharacterState> _stateControllersList = new List<ICharacterState>();
@@ -39,14 +39,9 @@ namespace Code.Controllers
             {
                 _stateControllersList[i].ChangeCharacterState += ChangeState;
             }
-
+            _joystick.Initialize();
             _moveController.Initialize();
         }
-
-        // public void Execute(float deltaTime)
-        // {
-        //     _animatorController.Execute(Time.deltaTime);
-        // }
 
         public void ChangeState(CharacterState newState)
         {
@@ -54,6 +49,8 @@ namespace Code.Controllers
             {
                 _stateControllersList[i].ChangeState(newState);
             }
+            
+            ChangeCharacterState?.Invoke(newState);
         }
 
         public void Dispose()

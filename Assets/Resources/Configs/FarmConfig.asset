@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Environment: {fileID: 7614219595250379821, guid: a17229a7d6e49ae49b8bca08aef8336a, type: 3}
   Barn: {fileID: 3544141955808661285, guid: 61363a85b07006847b50539f06dfa5eb, type: 3}
-  Field: {fileID: 8608582363729968544, guid: d15a72b23cbe15a42930bbfb0a7544a5, type: 3}
+  Field: {fileID: 1527305134614347554, guid: 24d0dbd3349ac7142ab4dc5162a47d57, type: 3}
+  _wheatGrowthTime: 10
+  _wheatMinHeight: 0.1
+  _wheatMaxHeight: 0.7
+  _wheatGrowthStages: 1

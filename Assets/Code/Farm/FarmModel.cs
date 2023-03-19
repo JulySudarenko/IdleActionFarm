@@ -8,33 +8,64 @@ namespace Code.Farm
 {
     internal class FarmModel
     {
-        private FarmConfig _config;
-
         private readonly Transform _barn;
-        private Transform _field;
-        
+        private readonly Transform _field;
+        public IHit[] WheatTriggers { get; private set; }
+        public int[] WheatCollidersIDs { get; private set; }
+        public Renderer[] WheatRenderers { get; private set; }
+        public Transform[] WheatTransforms{ get; private set; }
+        public Collider[] WheatTcColliders{ get; private set; }
+
         public FarmModel(FarmConfig config)
         {
-            _config = config;
+            Object.Instantiate(config.Environment);
+            _barn = Object.Instantiate(config.Barn);
+            _field = Object.Instantiate(config.Field);
 
-            Object.Instantiate(_config.Environment);
-            _barn = Object.Instantiate(_config.Barn);
-            _field = Object.Instantiate(_config.Field);
-           
+            GetWheatColliderID();
         }
 
         public int BarnID => _barn.gameObject.GetInstanceID();
-
+        
         public int[] GetFieldID()
         {
-            List<int> _fieldSegments = new List<int>();
+            List<int> fieldSegments = new List<int>();
             
             foreach (Transform segment in _field)
             {
-                _fieldSegments.Add(segment.gameObject.GetOrAddComponent<Collider>().GetInstanceID());
+                fieldSegments.Add(segment.gameObject.GetOrAddComponent<Collider>().GetInstanceID());
             }
 
-            return _fieldSegments.ToArray();
+            return fieldSegments.ToArray();
+        }
+
+        private void GetWheatColliderID()
+        {
+            List<Renderer> allWheatRenderers = new List<Renderer>();
+            List<Transform> allWheatTransforms = new List<Transform>();
+            List<Collider> allWheatColliders = new List<Collider>();
+            List<IHit> allWheatTriggers = new List<IHit>();
+            List<int> allWheatIDs = new List<int>();
+
+            foreach (Transform part in _field)
+            {
+                var partTrigger = part.gameObject.GetOrAddComponent<TriggerDetector>();
+                var partCollider = part.gameObject.GetOrAddComponent<Collider>();
+                var partID = part.gameObject.GetOrAddComponent<Collider>().GetInstanceID();
+                var partRenderer = part.gameObject.GetOrAddComponent<Renderer>();
+
+                allWheatTriggers.Add(partTrigger);
+                allWheatIDs.Add(partID);
+                allWheatTransforms.Add(part);
+                allWheatRenderers.Add(partRenderer);
+                allWheatColliders.Add(partCollider);
+            }
+
+            WheatTriggers = allWheatTriggers.ToArray();
+            WheatCollidersIDs = allWheatIDs.ToArray();
+            WheatRenderers = allWheatRenderers.ToArray();
+            WheatTransforms = allWheatTransforms.ToArray();
+            WheatTcColliders = allWheatColliders.ToArray();
         }
     }
 }

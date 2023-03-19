@@ -35,7 +35,7 @@ namespace Code.Controllers
             {
                 if (_wheatIDs[i] == id)
                 {
-                    ChangeCharacterState?.Invoke(CharacterState.Walk);
+                    ChangeCharacterState?.Invoke(CharacterState.StopWork);
                 }
             }
         }

@@ -32,6 +32,7 @@
             <e p="Controllers.cs" t="Include" />
             <e p="JoystickController.cs" t="Include" />
             <e p="LaunchingController.cs" t="Include" />
+            <e p="WheatCutController.cs" t="Include" />
           </e>
           <e p="Farm" t="Include">
             <e p="FarmModel.cs" t="Include" />
@@ -43,6 +44,7 @@
           </e>
           <e p="Instruments" t="Include">
             <e p="ScytheController.cs" t="Include" />
+            <e p="ScytheModel.cs" t="Include" />
             <e p="ScytheView.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">

@@ -1,10 +1,13 @@
 ﻿using Code.Character;
 using Code.Config;
 using Code.Farm;
+using Code.Hit;
 using Code.Instruments;
 using Code.Timer;
 using Code.UserInput;
 using UnityEngine;
+using UnityEngine.Assertions.Comparers;
+using UnityEngine.Tilemaps;
 
 namespace Code.Controllers
 {
@@ -22,13 +25,17 @@ namespace Code.Controllers
 
             var farm = new FarmModel(_unionConfig.FarmConfig);
             var character = new CharacterModel(_unionConfig.CharacterConfig);
+            var scythe = new ScytheModel(character.Transform);
             var characterController = new CharacterStateController(character, _unionConfig, input.InputWalk, farm);
-            var scytheController = new ScytheController(character.Transform, characterController);
-            
-            _controllers.Add(inputController);
-            _controllers.Add(characterController);
+            var scytheController = new ScytheController(scythe, characterController, farm.WheatCollidersIDs);
+
+            var wheatCutController = new WheatCutController(farm, scytheController, _unionConfig.FarmConfig);
 
             _controllers.Add(new TimeRemainingController());
+            _controllers.Add(inputController);
+            _controllers.Add(scytheController);
+            _controllers.Add(wheatCutController);
+            _controllers.Add(characterController);
         }
 
         private void Start()

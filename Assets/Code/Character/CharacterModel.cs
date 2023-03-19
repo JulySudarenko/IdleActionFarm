@@ -27,12 +27,14 @@ namespace Code.Character
             Animator = character.GetOrAddComponent<Animator>();
             //Renderer = character.GetComponent<Renderer>();
             CollisionDetector = character.GetOrAddComponent<CollisionDetector>();
-            //var collider = character.GetOrAddComponent<Collider>();
-            //ColliderID = collider.GetInstanceID();
-            //CharacterID = character.GetInstanceID();
+            var collider = character.GetOrAddComponent<Collider>();
+            ColliderID = collider.GetInstanceID();
+            CharacterID = character.GetInstanceID();
             AudioSource = character.GetOrAddComponent<AudioSource>();
             AudioSource.volume = 0.2f;
             TriggerDetector = character.GetOrAddComponent<TriggerDetector>();
+            
+            Debug.Log($"Character {ColliderID}, {CharacterID}");
         }
     }
 }

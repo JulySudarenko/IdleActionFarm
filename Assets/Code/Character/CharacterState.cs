@@ -4,6 +4,7 @@
     {
         Stay = 0,
         Walk = 1,
-        Work = 2
+        Work = 2,
+        StopWork = 3
     }
 }
